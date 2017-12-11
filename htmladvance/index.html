@@ -2,6 +2,7 @@
 <html>	
    <head>
       <title>Есенин</title>
+	  <script src="scripts/event.js"></script>
        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
    </head>
@@ -9,9 +10,6 @@
 	<body>
 
 	  <header ><a name="top">Сергей Александрович Есенин</header>
-
-
-
 
 	  <pre >
 	  
@@ -36,23 +34,10 @@
 	А заря, лениво
 	Обходя кругом,
 	обсыпает ветки
-	Новым серебром.						
-									
-								
-													
-													
-													
-													
-													
-													
-													
-													
-													
-													
-	  </pre>
+	Новым серебром.												
 
-	   
-
+													
+	  </pre>  
 
 	  <section >
 	  <hr>
@@ -103,12 +88,12 @@
 			</article>
 			
 		<article>
-			<video width="320" height="240" controls  
-				   loop poster="http://333v.ru/uploads/27/275ece47e10ddac918db3d0e0489845a.jpg" autoplay>
+			<video onplay="myFunction2()" onpause="myFunction()" width="320" height="240" controls  
+				   loop poster="http://333v.ru/uploads/27/275ece47e10ddac918db3d0e0489845a.jpg" >
 				  <source src="assets/pes.mp4" type="video/mp4" />
 			</video>
 			</br>
-				<audio   controls="controls" autoplay>
+				<audio onpause="myFunction()"  controls="controls" >
 					<source src="assets/SB.mp3"  />
 				</audio>
 				<hr>
@@ -123,11 +108,11 @@
 		   <hr>
 	 </section>
 
-	        <video width="320" height="240" controls="controls"  >				   
+	        <video onpause="myFunction()" width="320" height="240" controls  >				   
 				  <source src="assets/TE.mp4" type="video/mp4" />
 			</video>
 			
-	        <audio   controls="controls" >
+	        <audio  onpause="myFunction()" controls="controls" autoplay onpause="funcpause()">
 					<source src="assets/goga.mp3"  />
 		    </audio>
 			 
@@ -139,8 +124,9 @@
 			 <form >			
 				  авторизация:</br>
 					<input  type='email'  placeholder="email"/></br>
-					<input type="password" placeholder="password"  pattern="[A-Za-z].{5,}"><br>
+					<input type="password" placeholder="password"  pattern="[A-Za-zА-Яа-яЁё0-9]{8,}" required>><br>
 					<input type="submit" value="сохранить">
 			 </form>
+		
 	 </body>
 </html>
