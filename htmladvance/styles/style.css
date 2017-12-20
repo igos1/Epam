@@ -1,14 +1,272 @@
-header{
-	text-align:center;
+.header-1{    
+    font-size: 2pc;
+    padding: 40px;    
+    background: url("https://avatanplus.com/files/resources/original/583d3338c1a7f158af1015d9.jpg");
 }
-pre {
+.header-2{    
+    font-size: 2pc;
+    padding: 40px;    
+    background: url("https://c.pxhere.com/photos/51/e5/background_texture_wood_weathered_door_plank_board_cracked-1057909.jpg!d");
+    box-shadow: 
+    0 0 1px rgba(0, 0, 0, 0.3), 
+    0 3px 7px rgba(0, 0, 0, 0.3), 
+    inset 0 1px rgb(12, 12, 12),
+    inset 0 -3px 2px rgba(0,0,0,0.25);
+}
+.h-s{
+    
+    position: relative;
+    float: right;
+    
+}
+.body-1{
+    background-repeat:no-repeat;
+    background-image: url("http://www.kartinkijane.ru/pic/201503/2560x1440/kartinkijane.ru-83308.jpg");
+}
+header{
+    text-align:center;
+    border-bottom-right-radius: 25px;
+}
+.poem {
+    position: absolute;
 	background:url("http://storage_01.startwish.ru/images/0d/71/4654/d878289a35d754c2c215a1615e22b2306a1c_o.jpg");
 	background-repeat:no-repeat;
 	background-size:contain;
-	color:#00008B;
+    color:rgb(117, 140, 218);  
+    top:120px;
+    height: 300px;
+    width: 350px;
+    margin: 20px;
+    border: 50px;  
+    overflow: scroll;   
 }
-
-body {
-	
-	background-color:#D3D3D3;
+.biog{
+    background: url("http://wallpapercraft.net/wp-content/uploads/2017/01/clouds/clouds-9.jpg");
+    background-size:contain;
+    height: 270px;
+    width: 350px;
+    overflow: scroll; 
+    position: absolute;
+    top: 120px;
+    left: 380px;
+    margin: 20px;
+    border: 50px; 
+    padding: 10px;
+    border-radius: 25px;
+}
+.PD{
+background: url("http://wallpapercraft.net/wp-content/uploads/2017/01/clouds/clouds-9.jpg");
+background-size:contain;
+position: absolute;
+padding: 10px;
+top:120px;
+height: 270px;
+width: 350px;
+overflow: scroll; 
+left: 760px;
+margin: 20px;
+border: 50px; 
+border-radius: 25px;
+}
+.OneViAu{
+    position: absolute;
+    top:430px;
+    height: 300px;
+    width: 350px;        
+    left: 10px;
+    margin: 70px;
+    border: 50px;     
+}
+.TwoViAu{
+    position: absolute;
+    top:430px;
+    height: 300px;
+    width: 350px;        
+    left: 350px;
+    margin: 70px;
+    border: 50px; 
+}
+.fb {	
+	background:url(https://look.com.ua/pic/201401/1600x1200/look.com.ua-89624.jpg);
+}
+.form-1 {    
+    width: 300px;
+    margin: 70px auto 30px;
+    padding: 10px;
+    position: relative;     
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.3), 
+        0 3px 7px rgba(0, 0, 0, 0.3), 
+        inset 0 1px rgb(12, 12, 12),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 35px;
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+.life{
+    background: url("http://wallpapercraft.net/wp-content/uploads/2017/01/clouds/clouds-9.jpg");
+    background-size:contain;
+    overflow: scroll; 
+    position: absolute;
+    top:430px;
+    height: 270px;
+    width: 350px;    
+    position: absolute;
+    left: 720px;
+    margin: 70px;
+    border: 50px; 
+    padding: 10px;
+    border-radius: 25px;
+}
+ 
+h2{
+    color: #333; 
+    background: rgb(163, 118, 62);
+    font: caption;
+    position: absolute;   
+    left: 570px;
+    top: 0px;
+    border-radius: 35px;
+    padding: 10px;
+  
+}
+.footer-1 {
+    border-top-left-radius: 30px;
+    border-top-color: rgb(54, 54, 53);
+    border-top-width: 15px;
+    padding: 30px;
+    padding: 20px;     
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:35px;
+    width:100%;
+    background: url("https://avatanplus.com/files/resources/original/583d3338c1a7f158af1015d9.jpg");
+    box-shadow: 
+    0 0 1px rgba(0, 0, 0, 0.3), 
+    0 3px 7px rgba(0, 0, 0, 0.3), 
+    inset 0 1px rgb(12, 12, 12),
+    inset 0 -3px 2px rgba(0,0,0,0.25);
+ }
+ .footer-2{
+     color: black;
+    border-top-left-radius: 30px;
+    border-top-color: rgb(54, 54, 53);
+    border-top-width: 15px;
+    padding: 30px;
+    padding: 20px;         
+    position:fixed;    
+    left:0px;
+    bottom:0px;
+    height:35px;
+    width:100%;
+    opacity: 0.5;
+    background: url("https://c.pxhere.com/photos/51/e5/background_texture_wood_weathered_door_plank_board_cracked-1057909.jpg!d");   
+    box-shadow: 
+    0 0 1px rgba(0, 0, 0, 0.3), 
+    0 3px 7px rgba(0, 0, 0, 0.3), 
+    inset 0 1px rgb(12, 12, 12),
+    inset 0 -3px 2px rgba(0,0,0,0.25); 
+}
+ aside {          
+       float:left;
+       width: 80px;   
+   }
+   .body-2{
+       background: url("https://getbg.net/upload/full/78416_nebo_oblaka_1920x1200_(www.GetBg.net).jpg");       
+   }
+   .inp{
+       padding: 40px;
+       position: fixed;
+   }
+.st-1{
+    background-color: white;
+    position: absolute;	
+    color:rgb(117, 140, 218);  
+    top:120px;
+    left: 250px;
+    height: 300px;
+    width: 250px;
+    margin: 20px; 
+    padding: 25px;   
+    overflow: scroll;   
+    border-radius: 35px;
+}
+.st-2{
+    background-color: white;
+    position: absolute;	
+    color:rgb(117, 140, 218);  
+    top:120px;
+    left: 550px;
+    height: 300px;
+    width: 250px;
+    padding: 25px; 
+    margin: 20px;    
+    overflow: scroll;   
+    border-radius: 35px;
+}
+.st-3{
+    border-radius: 35px;
+    position: absolute;	
+    color:rgb(117, 140, 218);  
+    top:120px;
+    left: 850px;
+    height: 300px;
+    width: 250px;
+    margin: 20px; 
+    padding: 25px;    
+    padding-right: 30px;
+    background-color: white;   
+}
+.st-4{
+    border-radius: 35px;
+    position: absolute;	
+    color:rgb(117, 140, 218);  
+    top:400px;
+    left: 170px;
+    height: 300px;
+    width: 250px;
+    margin: 100px; 
+    padding: 25px;    
+    overflow: scroll;    
+    background-color: white;   
+}
+.st-5{
+    border-radius: 35px;
+    position: absolute;	
+    color:rgb(117, 140, 218);  
+    top:400px;
+    left: 470px;
+    height: 300px;
+    width: 250px;
+    margin: 100px; 
+    padding: 25px;    
+    overflow: auto;    
+    background-color: white;   
+}
+.f-s{
+    border-radius: 25px;
+    position: absolute;
+    top:800px;
+    left:900px;
+}
+.st-6{
+    border-radius: 35px;
+    margin-left: auto;
+	margin-right: auto;
+    width: 200px;
+    height: 300px;
+    background-color: white;     
+    padding: 25px;
+    overflow: auto;  
+}
+.st-6{
+    border-radius: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    top:430px;
+    width: 200px;
+    height: 300px;
+    background-color: white;     
+    padding: 25px;
+    overflow: scroll;  
 }
