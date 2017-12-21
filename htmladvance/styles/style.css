@@ -13,8 +13,7 @@
     inset 0 1px rgb(12, 12, 12),
     inset 0 -3px 2px rgba(0,0,0,0.25);
 }
-.h-s{
-    
+.h-s{    
     position: relative;
     float: right;
     
@@ -244,7 +243,12 @@ h2{
     background-color: white;   
 }
 .f-s{
-    border-radius: 25px;
+    width: 175px;
+    animation: search;
+    animation-duration: 2s;    
+    animation-timing-function: ease;   
+    animation-iteration-count: infinite;    
+    border-radius: 15px;
     position: absolute;
     top:800px;
     left:900px;
@@ -269,4 +273,129 @@ h2{
     background-color: white;     
     padding: 25px;
     overflow: scroll;  
+}
+.vk{
+    transition: all 0.5s linear;
+    margin:0px;
+}
+.vk:hover{    
+    margin: 10px;
+}
+.ok{
+    transition: all 0.5s ease;
+    margin:0px;
+}
+.ok:hover{
+    margin: 10px;
+}
+.ws{
+    transition: all 0.5s ease-in;
+    margin:0px;
+}
+.ws:hover{   
+    margin: 10px;
+}
+.fb{ 
+    transition: all 0.5s ease-out;
+    margin:0px;
+}
+.fb:hover{
+    margin: 10px;
+}
+@keyframes search{
+    0%{
+        width: 175px;
+        height: 30px;
+    }
+    25%{
+        width: 190px;
+        height: 35px;
+    }
+    50%{
+        width: 200px;
+        height: 40px;
+    }
+    75%{
+        width: 210px;
+        height: 45px;
+    }
+    100%{
+        width: 225px;
+        height: 50px;
+        color: rgb(85, 27, 12);
+    }
+}
+.red {    
+    width: 120px;
+    height: 120px;
+    background:rgb(116, 111, 111);
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    animation:sred;
+    animation-duration: 3s;    
+    animation-timing-function: ease;    
+  
+}
+.yellow {    
+    width: 120px;
+    height: 120px;
+    background: rgb(116, 111, 111);
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    animation:syellow;
+    animation-duration: 3s;    
+    animation-timing-function: ease;      
+    animation-delay: 4s;  
+}
+.green {
+    width: 120px;
+    height: 120px;
+    background: rgb(116, 111, 111);
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    animation:sgreen;
+    animation-duration: 3s;    
+    animation-timing-function: ease;    
+    animation-delay: 8s;
+}
+.svetofor {    
+    width: 220px;
+    height: 380px;
+    background: black;
+    border-radius: 35px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+@keyframes sred{
+    0%{
+        background: black
+    }
+    100%{
+        background: red;
+    }
+}
+@keyframes syellow{
+    0%{
+        background: black
+    }
+    100%{
+        background:yellow;
+    }
+}
+@keyframes sgreen{
+    0%{
+        background: black 
+    }
+    100%{
+        background: green;
+    }
 }
