@@ -13,6 +13,6 @@ var Car={
 Car.__proto__ = vehical;
 
 var MonsterTruck={
-  wheelsSize:undefined,  
-  __proto__:Car
+  wheelsSize:undefined,   
 };
+MonsterTruck.__proto__ = Car;
