@@ -20,13 +20,22 @@ function sumWith(number) {
 
 
 function sumWith(number) {
-  return this.currentValue += number;
+   return this.currentValue += number;
 }
  var number = 2;
  var value={
-  currentValue: -1
+  currentValue: 3
 };
-console.log(sumWith.apply(value,[number]));
-console.log(sumWith.apply(value,[number]));
-console.log(sumWith.apply(value,[number]));
-console.log(sumWith.apply(value,[number]));
+  console.log(sumWith.bind(value,number)());
+
+
+var countSum= function(){  
+  this.currentValue=-3;  
+  return sumWith.bind(this,number+=2)();  
+}
+
+
+console.log(countSum());
+console.log(countSum());
+console.log(countSum());
+console.log(countSum());
