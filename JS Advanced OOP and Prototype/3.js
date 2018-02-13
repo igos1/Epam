@@ -15,11 +15,11 @@ function Vehical() {
                   };
  
  function Bike() {
-    Vehical.call(this);
+    Vehical.call(this,arguments);
     this.wheelsCount=2;
-   
+    var parentMove = this.move;
     this.move=function(){
-    Vehical.prototype.move.call(this);
+    parentMove.call(this, arguments);
     console.log("Âðóì-âðóóóì");
                         }
     
@@ -66,8 +66,7 @@ this.valueOf=function(){
 function MonsterTruck(){  
  Car.apply(this, arguments);
   this.wheelsSize=40;  
-  var parentopenDoor = this.openDoor;
-  
+  var parentopenDoor = this.openDoor;  
   this.openDoor=function(){    
   setTimeout(()=>{
    parentopenDoor.apply(this, arguments);
@@ -101,3 +100,6 @@ myCar.stop();
 console.log(myCar.speed);
 myCar2.openDoor();
 console.log(myCar2 instanceof Vehical);
+var myBike = new Bike();
+myBike.move();
+console.log(myBike.speed);
