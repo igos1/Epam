@@ -11,6 +11,3 @@ if(this.next && apples>0){
 }
 }
 
-const boy1 = new Child();
-const girl1= new Child(boy1);
-girl1.eat(2);

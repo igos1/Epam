@@ -1,3 +1,4 @@
+//decorator
 function Ball(){};
 Ball.prototype.getDescription = function () {
 return "ball";
@@ -28,4 +29,7 @@ ColorBallDecorator.prototype.getDescription = function() {
 };
 
 
-
+exports.Ball = Ball;
+exports.SomeBallDecorator = SomeBallDecorator;
+exports.LineBallDecorator = LineBallDecorator;
+exports.ColorBallDecorator = ColorBallDecorator;
