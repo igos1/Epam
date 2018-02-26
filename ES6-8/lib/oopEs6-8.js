@@ -9,7 +9,7 @@ class Vehical{
      this.speed=0
    }
     toString(){
-     return ("vehical speed = "+this.speed);
+     return (`vehical speed = ${this.speed}`);
    }
     valueOf(){
     return this.speed;
@@ -26,7 +26,7 @@ class Vehical{
       console.log("vrum-vruum");
    }
     toString(){
-     return (super.toString()+' '+this.wheelsCount);
+     return (`${super.toString()} ${this.wheelsCount}`);
    }
     valueOf(){
     return {
@@ -46,7 +46,7 @@ class Vehical{
     }
    openDoor(){ 
    if(this.openDoorCount<this.doorsCount) {this.openDoorCount+=1;
-    console.log("closed doors = "+(this.doorsCount-this.openDoorCount));
+    console.log(`closed doors = ${(this.doorsCount-this.openDoorCount)}`);
                                           } 
    }
      toString(){
