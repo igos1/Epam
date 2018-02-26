@@ -30,9 +30,4 @@ class Wallet {
     
  }
  
- let wallet1 = new Wallet('1');
- let wallet2 = new Wallet('2');
- wallet1.addObs(wallet2);
- wallet2.addObs(wallet1);
- wallet1.send();
- wallet2.send();
+ module.exports = Wallet;

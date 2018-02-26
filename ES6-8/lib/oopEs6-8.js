@@ -84,11 +84,4 @@ class Vehical{
   }
   Car.count=0;
   
-  var myCar= new Car();
-   var myCar2= new  Bike();
-  myCar2.move();
-  console.log(myCar2.speed);
-  myCar2.stop();
-  console.log(myCar2.speed);
-  myCar.openDoor();
-  console.log(Car.count);
+  
