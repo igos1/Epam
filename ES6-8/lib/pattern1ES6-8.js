@@ -13,7 +13,7 @@ class Ball {
         this.ball = ball;
       }
       getDescription() {
-        return (`red ${this.ball.getDescription()} widht lines`);
+        return (`red ${this.ball.getDescription()} with lines`);
       }
     }
   
@@ -35,7 +35,7 @@ class Ball {
   }
   } 
   
-  exports.Ball = Ball; 
-  exports.SomeBallDecorator = SomeBallDecorator; 
-  exports.LineBallDecorator = LineBallDecorator; 
-  exports.ColorBallDecorator = ColorBallDecorator;
+  module.exports.Ball = Ball; 
+  module.exports.SomeBallDecorator = SomeBallDecorator; 
+  module.exports.LineBallDecorator = LineBallDecorator; 
+  module.exports.ColorBallDecorator = ColorBallDecorator;

@@ -1,6 +1,6 @@
-var Ball = require("../lib/oopES6-8.js").Ball,
-  SomeBallDecorator = require("../lib/oopES6-8.js").SomeBallDecorator,
-  LineBallDecorator = require("../lib/oopES6-8.js").LineBallDecorator;
+var Ball = require("../lib/pattern1ES6-8").Ball,
+  SomeBallDecorator = require("../lib/pattern1ES6-8").SomeBallDecorator,
+  LineBallDecorator = require("../lib/pattern1ES6-8").LineBallDecorator;
 
 describe("Ball tests", function() {
   it("should run tests", function() {
