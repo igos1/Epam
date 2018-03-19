@@ -45,12 +45,12 @@
 
 					 document.getElementById("today_widget").innerHTML = "";
 
-					 document.getElementById("today_widget").innerHTML =Math.round( data.list[0].main.temp - 273);
+					 document.getElementById("today_widget").innerHTML =Math.round( data.list[0].main.temp - 273) + "°";
 
 					 document.getElementById("date_tuesday").innerHTML = "";
 
 					 document.getElementById("date_tuesday").innerHTML =  Name((new Date (data.list[0].dt_txt)).getDay()) +
-					  ", " +((new Date (data.list[0].dt_txt)).toDateString()).slice(4,11);
+					  ", " +( new Date().toLocaleString("en", {month: 'long', day: 'numeric'}));
 
 					 document.getElementById("clouds").innerHTML = "";
 
