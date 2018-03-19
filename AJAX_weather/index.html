@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Погода</title>        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+     </head>
+     <body>
+         <header>
+           <div class="weat_head">
+               Погода на  5 дней
+           </div>                   
+         </header>
+
+         <div class="weather_block">
+
+         <nav>
+		   <ul class="nav_city">		   
+		      <li class="city" data-city="London">
+                london
+				</li>
+				<li class="city" data-city="Ryazan">
+                Рязань
+				</li>
+				<li class="city" data-city="New York">
+                New York
+				</li>
+				<li class="city" data-city="Moscow">
+                Москва
+				</li>
+		   </ul>	
+        </nav>
+
+         <main>        
+         
+                <h1 id="city_name_h" ></h1>
+                             
+                    <div class="tuesday">
+                         <div>                                 
+                                    <p id="date_tuesday"></p>
+                                     
+                         </div>  
+                         <div class="imganddetcont">  
+                                <div class="today">          
+                                    <img id="today_icon"/>                      
+                                    <div id="today_widget"></div>
+                                    <div class="today_scale"></div>
+                                </div>                            
+                                <div class="detal">
+                                        <p id="clouds"></p>
+                                        <p id = "Humidity"></p>
+                                        <p id="wind"></p>
+                                        
+                                </div>   
+                        </div>  
+                    </div>   
+            <div class="week">                                
+                <div class="name_week" data-numDay="0">                    
+                    <div class="day_name"></div>
+                    <div class="weatherimg">
+                        <img class="week_day_icon"  />
+                    </div>
+                    <div class="day_night">
+                    <div class="day_widget"></div>
+                    <div class="night_widget"></div>
+                    </div> 
+                                                     
+                </div> 
+                <div class="name_week" data-numDay="0">
+                    <div class="day_name"></div>
+                    <div class="weatherimg">
+                        <img class="week_day_icon" />
+                    </div>
+                    <div class="day_night">
+                      <div class="day_widget"></div>
+                      <div class="night_widget"></div>
+                    </div> 
+                                                     
+                </div> 
+                <div class="name_week">
+                        <div class="day_name"></div>
+                        <div class="weatherimg">
+                            <img class="week_day_icon" />
+                        </div>
+                        <div class="day_night">
+                          <div class="day_widget"></div>
+                          <div class="night_widget"></div>
+                        </div> 
+                                                                   
+            </div> 
+            <div class="name_week">
+                        <div class="day_name"></div>
+                        <div class="weatherimg">
+                            <img class="week_day_icon" />
+                        </div>
+                        <div class="day_night">
+                            <div class="day_widget"></div>
+                            <div class="night_widget"></div>
+                        </div> 
+                                                                      
+            </div> 
+            <div class="name_week">
+                        <div class="day_name"></div>
+                        <div class="weatherimg" >
+                             <img class="week_day_icon" />
+                        </div>
+                        <div class="day_night">
+                            <div class="day_widget"></div>
+                            <div class="night_widget"></div>
+                        </div> 
+                                                                        
+            </div> 
+            
+                      
+        </main>
+        <aside>
+           Aside
+        </aside>
+         </div>
+         <footer>
+             footer
+         </footer>
+		 <script src="scripts/main.js"></script>
+     </body>
+</html>     
