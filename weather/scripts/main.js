@@ -147,11 +147,11 @@
 			    document.getElementById("date_tuesday").innerHTML =  Name((new Date (data.city[city_num].data_for_5_days[0].dt_txt)).getDay()) +
 					  ", " +( new Date().toLocaleString("en", {month: 'long', day: 'numeric'}));			 
 
-			   /* document.getElementById("clouds").innerHTML = "Precipipation: "+ data.list[0].clouds.all+"%";					 
+			    document.getElementById("clouds").innerHTML = "Precipipation: "+ data.city[city_num].data_for_5_days[0].Precipipation+"%";					 
 
-				document.getElementById("Humidity").innerHTML = "Humidity: "+ data.list[0].main.humidity+"%";					 
+				document.getElementById("Humidity").innerHTML = "Humidity: "+ data.city[city_num].data_for_5_days[0].Humidity+"%";					 
 
-				document.getElementById("wind").innerHTML ="Wind: "+ data.list[0].wind.speed + " mph";*/
+				document.getElementById("wind").innerHTML ="Wind: "+ data.city[city_num].data_for_5_days[0].Wind + " mph";
 
 				for( var j = 0 ; j <data.city[city_num].data_for_5_days.length ; j++  ){
 
