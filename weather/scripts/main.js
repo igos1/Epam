@@ -51,11 +51,7 @@
 
 					var data = JSON.parse(request.responseText);					
 							 
-					 city_name_h.innerHTML = data.city.name;
-
-					
-
-					 
+					 city_name_h.innerHTML = data.city.name;					 
 
 					 document.getElementById("today_widget").innerHTML =Math.round( data.list[0].main.temp - 273) + "°";					 
 
@@ -129,8 +125,7 @@
 				var data = JSON.parse(request.responseText);
 				console.log(data);
 				var city_num = 0;
-
-				
+								
 
 				for ( var i = 0; i < data.city.length ; i++){
 
@@ -159,15 +154,14 @@
 
 					week_day_name[j].innerText = Name((new Date (data.city[city_num].data_for_5_days[j].dt_txt)).getDay());
 
-					//console.log((new Date (data.city[city_num].data_for_5_days[j].dt_txt)).getDay());
+					
 								
 					day_wid[j].innerText = data.city[city_num].data_for_5_days[j].temp_day + '°';
 
 					night_wid[j].innerText =data.city[city_num].data_for_5_days[j].temp_night + '°';
 
 					week_day_icon[j].src = data.city[city_num].data_for_5_days[j].icon_weather;
-					console.log(data.city[city_num].data_for_5_days[j].icon_weather);
-
+					
 				}
 				
 
