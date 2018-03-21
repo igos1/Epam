@@ -3,7 +3,8 @@
     "city" : [
         {
            "city_name" : "Владивосток",
-           "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "-10" , "temp_night" : "-20" , "icon_weather" : ""},
+           "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "-10" , "temp_night" : "-20" , "icon_weather" : "" ,
+                                "Precipipation" : "50%" ,"Humidity" : "72%" , "Wind" : "2"},
                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "-11" , "temp_night" : "-22" , "icon_weather" : ""},
                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "-3" , "temp_night" : "-10" , "icon_weather" : ""},
                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "-6" , "temp_night" : "-7" , "icon_weather" : ""},

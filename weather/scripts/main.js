@@ -130,6 +130,8 @@
 				console.log(data);
 				var city_num = 0;
 
+				
+
 				for ( var i = 0; i < data.city.length ; i++){
 
 					if(data.city[i].city_name == that.dataset.city) {
@@ -138,6 +140,18 @@
 					}
 
 				}
+				city_name_h.innerHTML = data.city[city_num].city_name;
+
+				document.getElementById("today_widget").innerHTML = data.city[city_num].data_for_5_days[0].temp_day+ "°";					 
+
+			    document.getElementById("date_tuesday").innerHTML =  Name((new Date (data.city[city_num].data_for_5_days[0].dt_txt)).getDay()) +
+					  ", " +( new Date().toLocaleString("en", {month: 'long', day: 'numeric'}));			 
+
+			   /* document.getElementById("clouds").innerHTML = "Precipipation: "+ data.list[0].clouds.all+"%";					 
+
+				document.getElementById("Humidity").innerHTML = "Humidity: "+ data.list[0].main.humidity+"%";					 
+
+				document.getElementById("wind").innerHTML ="Wind: "+ data.list[0].wind.speed + " mph";*/
 
 				for( var j = 0 ; j <data.city[city_num].data_for_5_days.length ; j++  ){
 
