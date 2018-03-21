@@ -1,5 +1,13 @@
  let city = document.getElementsByClassName("city");
 
+ let city_mySer = document.getElementsByClassName("city_my_server");
+
+ for ( var i = 0 ; i < city_mySer.length ; i ++) {
+
+	city_mySer[i].addEventListener("click", showWeatherCityMyServ);
+ 
+  }
+
  for ( var i = 0 ; i < city.length ; i ++) {
 
    city[i].addEventListener("click", showWeatherCity);
@@ -16,11 +24,7 @@
 	var week_day_icon = document.getElementsByClassName("week_day_icon");	
 	
 
- function showWeatherCity(){
-
-	 var request = new XMLHttpRequest();
-
-	 function Name(n){
+	function Name(n){
 		switch (n)
 		{
 		case 1:n ="Monday"; break;
@@ -34,6 +38,12 @@
 		}
 		return n;
 	 }
+
+ function showWeatherCity(){
+
+	 var request = new XMLHttpRequest();
+
+	
 	 
 	 request.onreadystatechange = function () {
 		if (request.readyState == 4 && request.status == 200) {
@@ -43,24 +53,18 @@
 							 
 					 city_name_h.innerHTML = data.city.name;
 
-					 document.getElementById("today_widget").innerHTML = "";
+					
 
-					 document.getElementById("today_widget").innerHTML =Math.round( data.list[0].main.temp - 273) + "°";
+					 
 
-					 document.getElementById("date_tuesday").innerHTML = "";
+					 document.getElementById("today_widget").innerHTML =Math.round( data.list[0].main.temp - 273) + "°";					 
 
 					 document.getElementById("date_tuesday").innerHTML =  Name((new Date (data.list[0].dt_txt)).getDay()) +
-					  ", " +( new Date().toLocaleString("en", {month: 'long', day: 'numeric'}));
+					  ", " +( new Date().toLocaleString("en", {month: 'long', day: 'numeric'}));			 
 
-					 document.getElementById("clouds").innerHTML = "";
+					 document.getElementById("clouds").innerHTML = "Precipipation: "+ data.list[0].clouds.all+"%";					 
 
-					 document.getElementById("clouds").innerHTML = "Precipipation: "+ data.list[0].clouds.all+"%";
-
-					 document.getElementById("Humidity").innerHTML = "";
-
-					 document.getElementById("Humidity").innerHTML = "Humidity: "+ data.list[0].main.humidity+"%";
-
-					 document.getElementById("wind").innerHTML = "";
+					 document.getElementById("Humidity").innerHTML = "Humidity: "+ data.list[0].main.humidity+"%";					 
 
 					 document.getElementById("wind").innerHTML ="Wind: "+ data.list[0].wind.speed + " mph";
 
@@ -78,7 +82,7 @@
 							if ((new Date (data.list[j].dt_txt)).getHours() == "12") {								
 														
 								week_day_name[i].innerText = Name((new Date (data.list[j].dt_txt)).getDay());
-								console.log(data);
+								
 								
 
 								day_wid[i].innerText = Math.round(data.list[j].main.temp - 273) + '°';
@@ -113,4 +117,52 @@
 	 request.send();
  }
 
+
+ function showWeatherCityMyServ(){
+ 
+	var request = new XMLHttpRequest();	
+	 var that = this;
+	request.onreadystatechange = function () {
+	   if (request.readyState == 4 && request.status == 200) {
+			   try {
+
+				var data = JSON.parse(request.responseText);
+				console.log(data);
+				var city_num = 0;
+
+				for ( var i = 0; i < data.city.length ; i++){
+
+					if(data.city[i].city_name == that.dataset.city) {
+						city_num = i; 
+						break;
+					}
+
+				}
+
+				for( var j = 0 ; j <data.city[city_num].data_for_5_days.length ; j++  ){
+
+					week_day_name[j].innerText = Name((new Date (data.city[city_num].data_for_5_days[j].dt_txt)).getDay());
+								
+					day_wid[j].innerText = data.city[city_num].data_for_5_days[j].temp_day + '°';
+
+					night_wid[j].innerText =data.city[city_num].data_for_5_days[j].temp_night + '°';
+
+				}
+				
+
+
+
+			} catch (err) {
+				console.log(err.message + " in " + request.responseText);
+				return;
+		}
+		
+}
+};
+
+request.open("GET",'http://localhost:3000/city');
+request.send();
+
+
+ }
  

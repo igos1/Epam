@@ -1,0 +1,31 @@
+{
+    "cod" : "200",
+    "city" : [
+        {
+           "city_name" : "Владивосток",
+           "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "-10" , "temp_night" : "-20" , "icon_weather" : ""},
+                                {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "-11" , "temp_night" : "-22" , "icon_weather" : ""},
+                                {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "-3" , "temp_night" : "-10" , "icon_weather" : ""},
+                                {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "-6" , "temp_night" : "-7" , "icon_weather" : ""},
+                                {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-14" , "temp_night" : "-18" , "icon_weather" : ""}]
+        }, 
+        {
+            "city_name" : "Дубай",
+            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "10" , "temp_night" : "20" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "20" , "temp_night" : "25" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "12" , "temp_night" : "27" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "30" , "temp_night" : "20" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "38" , "temp_night" : "22" , "icon_weather" : ""}]
+         }, 
+         {
+            "city_name" : "Токио",
+            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "0" , "temp_night" : "2" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "12" , "temp_night" : "13" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "4" , "temp_night" : "1" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "23" , "temp_night" : "10" , "icon_weather" : ""},
+                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-3" , "temp_night" : "-20" , "icon_weather" : ""}]
+         }
+            
+    ]
+
+}
