@@ -3,30 +3,30 @@
     "city" : [
         {
            "city_name" : "Владивосток",
-           "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "-10" , "temp_night" : "-20" , "icon_weather" : "" ,
+           "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "-10" , "temp_night" : "-20" , "icon_weather" : "http://images.gofreedownload.net/2/snow-weather-icons-4648.jpg" ,
                                 "Precipipation" : "50%" ,"Humidity" : "72%" , "Wind" : "2"},
-                                {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "-11" , "temp_night" : "-22" , "icon_weather" : ""},
-                                {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "-3" , "temp_night" : "-10" , "icon_weather" : ""},
-                                {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "-6" , "temp_night" : "-7" , "icon_weather" : ""},
-                                {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-14" , "temp_night" : "-18" , "icon_weather" : ""}]
+                                {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "-11" , "temp_night" : "-22" , "icon_weather" : "http://images.gofreedownload.net/2/snow-weather-icons-4648.jpg"},
+                                {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "-3" , "temp_night" : "-10" , "icon_weather" : "https://findicons.com/files/icons/2616/weather_icons/128/05.png"},
+                                {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "-6" , "temp_night" : "-7" , "icon_weather" : "https://otvet.imgsmail.ru/download/14679073_02d0a9ccd3cf83cab42a280f9cf8b95a_800.jpg"},
+                                {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-14" , "temp_night" : "-18" , "icon_weather" : "http://bloximages.chicago2.vip.townnews.com/mtstandard.com/content/tncms/assets/v3/editorial/2/ca/2ca4b512-592e-11e3-a04e-001a4bcf887a/5298ededae47a.preview-620.jpg"}]
         }, 
         {
             "city_name" : "Дубай",
-            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "10" , "temp_night" : "20" , "icon_weather" : "",
+            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "10" , "temp_night" : "20" , "icon_weather" : "http://pngimg.com/uploads/sun/sun_PNG13429.png",
                                 "Precipipation" : "60%" ,"Humidity" : "42%" , "Wind" : "1"},
-                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "20" , "temp_night" : "25" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "12" , "temp_night" : "27" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "30" , "temp_night" : "20" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "38" , "temp_night" : "22" , "icon_weather" : ""}]
+                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "20" , "temp_night" : "25" , "icon_weather" : "https://ru.seaicons.com/wp-content/uploads/2015/10/Cloudy-Daytime-icon.png"},
+                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "12" , "temp_night" : "27" , "icon_weather" : "https://ru.seaicons.com/wp-content/uploads/2015/10/Cloudy-Daytime-icon.png"},
+                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "30" , "temp_night" : "20" , "icon_weather" : "https://www.freeiconspng.com/uploads/weather-icon-png-0.png"},
+                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "38" , "temp_night" : "22" , "icon_weather" : "http://pngimg.com/uploads/sun/sun_PNG13429.png"}]
          }, 
          {
             "city_name" : "Токио",
-            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "0" , "temp_night" : "2" , "icon_weather" : "",
+            "data_for_5_days" : [{"dt_txt" :"2018-03-21 12:00:00" , "temp_day" : "0" , "temp_night" : "2" , "icon_weather" : "https://ru.seaicons.com/wp-content/uploads/2015/10/Cloudy-Daytime-icon.png",
                                 "Precipipation" : "70%" ,"Humidity" : "88%" , "Wind" : "2.2"},
-                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "12" , "temp_night" : "13" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "4" , "temp_night" : "1" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "23" , "temp_night" : "10" , "icon_weather" : ""},
-                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-3" , "temp_night" : "-20" , "icon_weather" : ""}]
+                                 {"dt_txt" :"2018-03-22 12:00:00" , "temp_day" : "12" , "temp_night" : "13" , "icon_weather" : "https://static6.depositphotos.com/1038165/646/v/450/depositphotos_6462924-stock-illustration-glass-nature-weather-symbol-blue.jpg"},
+                                 {"dt_txt" :"2018-03-23 12:00:00" , "temp_day" : "4" , "temp_night" : "1" , "icon_weather" : "https://cdn1.iconfinder.com/data/icons/weather-elements/512/Weather_CloudSunRAin.png"},
+                                 {"dt_txt" :"2018-03-24 12:00:00" , "temp_day" : "23" , "temp_night" : "10" , "icon_weather" : "https://bobr.by/data/relevant/relevant162.jpg"},
+                                 {"dt_txt" :"2018-03-25 12:00:00" , "temp_day" : "-3" , "temp_night" : "-20" , "icon_weather" : "http://free-icons-download.net/images/blue-snow-icon-38706.png"}]
          }
             
     ]

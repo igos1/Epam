@@ -33,7 +33,7 @@
 		case 4:n ="Thursday"; break;
 		case 5:n ="Friday"; break;
 		case 6:n ="Saturday"; break;
-		case 7:n ="Sunday"; break;
+		case 0:n ="Sunday"; break;
 		default:n ="Неверные данные";
 		}
 		return n;
@@ -153,13 +153,20 @@
 
 				document.getElementById("wind").innerHTML ="Wind: "+ data.city[city_num].data_for_5_days[0].Wind + " mph";
 
-				for( var j = 0 ; j <data.city[city_num].data_for_5_days.length ; j++  ){
+				document.getElementById("today_icon").src = data.city[city_num].data_for_5_days[0].icon_weather;
+
+				for( var j = 0 ; j < 5 ; j++  ){
 
 					week_day_name[j].innerText = Name((new Date (data.city[city_num].data_for_5_days[j].dt_txt)).getDay());
+
+					//console.log((new Date (data.city[city_num].data_for_5_days[j].dt_txt)).getDay());
 								
 					day_wid[j].innerText = data.city[city_num].data_for_5_days[j].temp_day + '°';
 
 					night_wid[j].innerText =data.city[city_num].data_for_5_days[j].temp_night + '°';
+
+					week_day_icon[j].src = data.city[city_num].data_for_5_days[j].icon_weather;
+					console.log(data.city[city_num].data_for_5_days[j].icon_weather);
 
 				}
 				
