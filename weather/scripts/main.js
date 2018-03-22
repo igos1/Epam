@@ -70,15 +70,15 @@
 					 var i = 1;
 					 var m = 0;					
 						 
-					 if( (new Date()).getHours() >= 12){
+					 if( (new Date (data.list[0].dt_txt)).getHours()  > 12){
 													
 						week_day_name[0].innerText = Name((new Date (data.list[0].dt_txt)).getDay());					
 						day_wid[0].innerText = Math.round(data.list[0].main.temp - 273) + '°';
 						week_day_icon[0].src =  "http://openweathermap.org/img/w/"+
 							 data.list[0].weather[0].icon + ".png";
-							 
+							console.log(data);
 							}
-							 else{
+							 else{								 
 								 i = 0;
 							 }
 							 
