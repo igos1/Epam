@@ -70,11 +70,23 @@
 					 var i = 1;
 					 var m = 0;					
 						 
+					 if( (new Date()).getHours() > 12){
+													
+						week_day_name[0].innerText = Name((new Date (data.list[0].dt_txt)).getDay());					
+						day_wid[0].innerText = Math.round(data.list[0].main.temp - 273) + '°';
+						week_day_icon[0].src =  "http://openweathermap.org/img/w/"+
+							 data.list[0].weather[0].icon + ".png";
+							 
+							}
+							 else{
+								 i = 0;
+							 }
+
+
+							 console.log(data);
+
 						for( var j = 0 ; j <data.list.length ; j++  ){		
-							week_day_name[0].innerText = Name((new Date (data.list[0].dt_txt)).getDay());					
-							day_wid[0].innerText = Math.round(data.list[0].main.temp - 273) + '°';
-							week_day_icon[0].src =  "http://openweathermap.org/img/w/"+
-								 data.list[j].weather[0].icon + ".png";
+						
 							if ((new Date (data.list[j].dt_txt)).getHours() == "12") {								
 														
 								week_day_name[i].innerText = Name((new Date (data.list[j].dt_txt)).getDay());
