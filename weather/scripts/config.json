@@ -1,0 +1,6 @@
+{
+    "key" : "e33262cd6a432b1c3dc5181a736dbc41",
+    "url_myserv" : "http://localhost:3000/city",
+    "url_openweather" : "http://api.openweathermap.org/data/2.5/forecast"
+
+}

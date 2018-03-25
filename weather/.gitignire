@@ -1,0 +1,2 @@
+# игнорируем папку node_modules
+node_modules/
