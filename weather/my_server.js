@@ -5,8 +5,9 @@ const express = require('express');
 
 var app = express();
 
-var data =fs.readFileSync('scripts/data.json');
-var length_d = JSON.parse(data).data_city.length;
+var datajson =fs.readFileSync('scripts/data.json');
+var data =  JSON.parse(datajson);
+var length_d = data.data_city.length;
 
 app.all('/*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -19,9 +20,9 @@ app.all('/*', function(req, res, next) {
 
     for (var i = 0 ; i < length_d ; i++){        
         
-        if (JSON.parse(data).data_city[i].city.name == cityname) {                       
+        if (data.data_city[i].city.name == cityname) {                       
 
-        res.send(JSON.parse(data).data_city[i]);
+        res.send(data.data_city[i]);
        
 		}		
     } 
